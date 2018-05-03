@@ -15,6 +15,10 @@ function handleRequestTwo(request, response) {
 let serverOne = http.createServer(handleRequestOne);
 let serverTwo = http.createServer(handleRequestTwo);
 
-server.listen(PORT, function(){
-    console.log(`the server is running on port ${PORT}`)
+serverOne.listen(PORTONE, function(){
+    console.log(`the server is running on port ${PORTONE}`)
+})
+
+serverTwo.listen(PORTTWO, function(){
+    console.log(`the server is running on port ${PORTTWO}`)
 })
